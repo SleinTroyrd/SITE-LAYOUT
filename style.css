@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color:#000;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    color: #727272;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    background: #EEEFF1;
+}
+
+.header__inner {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo a {
+    color: #34547A;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.header__nav {
+    display: flex; 
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__list li {
+    padding-left: 50px;
+}
+
+.nav__list a {
+    font-size: 1.5rem;
+}
+
+.nav__list a:hover {
+    color: #34547A;
+}
+
+.menu {
+    border: none;
+    display: none;
+}
+
+.main {
+    width: 100%;
+    z-index: 1;
+}
+
+.intro { 
+    background: #EEEFF1;
+}
+
+.intro__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10rem 0;
+    display: flex;  
+    justify-content: space-between;
+}    
+
+.intro__frame {
+    font-size: 10rem;
+}
+   
+.intro__container h1 {
+    font-size: 3rem;
+}
+
+.intro__container p {
+    margin: 60px 0;
+    font-size: 1rem;
+}
+
+.intro__button {
+    color: #FFFFFF;
+    border: 0.1rem solid #34547A;
+    padding: 1rem 2.5rem;
+    background-color: #34547A;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.intro__button:hover{
+    color:  #34547A;
+    background-color: #FFFFFF;  
+    cursor: pointer;
+}
+
+.about-me {
+    width: 100%;
+    margin: 100px 0;
+}
+
+.about-me__h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-me__a {
+    text-align: center;
+}
+
+.advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #34547A;
+}
+
+.advantages__list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__item {
+  color: #FFFFFF;
+  display: flex;   
+  margin: 0 25px 0 25px;   
+}
+
+.advantages__item svg {
+    margin-right: 20px;
+}
+
+.advantages__item p span{
+    font-size: 1.5rem;
+    padding: 3px 0;
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.advantages__item p{
+    color: #FFFFFF;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+.skills {
+    background: #FFFFFF;
+    margin: 100px 0px;
+}
+.skills__inner {
+    max-width: 1150px;
+    margin: 0 auto;   
+    display: flex; 
+    justify-content: space-between;
+}
+
+.skills__list {
+    width: 40%;
+}
+
+.skills__h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 75px;
+    padding-bottom: 10px;
+}
+
+.skills__p {
+    font-size: 1rem;
+    font-family: 400;
+}
+
+.skills__p p {
+    position: relative;
+    padding-bottom: 20px; 
+    padding-top: 30px; 
+    width: 100%;
+    border-bottom: 4px solid #C4C4C4;
+}
+
+.skills__p p::after{
+    content:"";
+    display: block;
+    height: 4px;
+    width: 80%;  
+    background-color: #34547A; 
+    position: absolute; 
+    top: 68.1px; 
+    left: 0;
+    z-index: 1;
+}
+
+.video {
+    background: #EEEFF1;
+}
+
+.video__inner {
+    max-width: 1115px;
+    padding: 100px 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video__title {
+    margin: 50px 0;
+}
+
+.video__html {
+    max-width: 1110px;
+}
+
+.section__projects {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.project {
+    position: relative;
+    flex: 0 1 25%; 
+}
+
+.project > div  {
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    display: none;
+    background-color: #34547A;
+    opacity: 0.7;
+    left: 0;  
+    bottom: 0;
+    right: 0;
+    top: 0;   
+}
+
+.eye {
+    margin: 40% 40%;
+}
+
+.project:hover .icon{    
+    display: block; 
+    position: absolute;
+}
+
+.partners__list {
+    max-width: 1100px;
+    padding: 100px 0px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.partners__list li {
+    padding: 0 10px; 
+}
+
+.form {
+    background: #EEEFF1;
+}
+
+.form__inner {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.form__inner h2 {
+    text-align: center; 
+    padding-bottom: 50px;
+}
+
+.form__inner p {
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.form__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__list input {
+    flex: 0 0 45%;
+    padding: 15px 10px;
+    margin-bottom:20px ;
+    font-size: 1rem;
+}
+
+.name {
+    margin-right: 10%;
+}
+
+.form textarea {
+    flex: 0 0 100%;
+    padding: 10px 10px 100px 10px;
+    margin-bottom: 50px;
+    font-size: 1.4rem;
+}
+
+.form button {
+    margin: 0 auto;
+    color: #FFFFFF;
+    border: 1px solid #34547A;
+    padding: 15px 50px;
+    background-color: #34547A;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.form button:hover{
+    background-color:  #FFFFFF; 
+    color: #34547A;
+    cursor: pointer;
+}
+
+.footer { 
+    background: #34547A;
+}
+
+.footer__inner {
+    max-width: 940px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__inner span {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    display: flex;
+    flex-flow: column-reverse;
+} 
+
+.footer__inner p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.footer__logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.logo {
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .skills__inner {
+        padding: 0 40px;
+    } 
+
+    .skills__h2 {
+        padding-top: 75px;
+    }  
+
+    .photo {
+        width: 50%;  
+        height: 50%; 
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .menu__brg{
+       width: 300px;
+       position: fixed;
+       z-index: 4;
+    }
+
+    .header {
+        width: 100%;
+        background: #EEEFF1;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        justify-content: flex-end;
+    }
+    
+    .header.header__active  {
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .header__logo {
+        display: none;
+    }
+    
+    .header__inner {
+        height: 550px; 
+        padding-top: 60px;
+        display: flex;
+        justify-content: flex-end; 
+    }
+    
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__list li {
+        padding: 30px;
+    }
+    
+    .burger__active {
+        background: #EEEFF1;
+    }
+    
+    .menu {
+        display: block;
+        margin: 1rem 6rem;
+        width: 80px;
+        height: 60px;
+        position: absolute;
+        cursor:pointer;
+        z-index: 2;
+    }
+    .menu .line {
+        display: block;
+        width: 100%;
+        height: 8px;
+        background-color: #34547A;
+        position: absolute;
+        transition: .3s;
+    }
+    
+    .menu .line:after, .menu .line:before {
+        display: block;
+        width: 100%;
+        height: 8px;
+        background-color: #34547A;
+        position: absolute;
+        transition: .3s;
+        content: "";       
+    }
+    
+    .menu .line:before {
+        top: -20px;
+        transition-delay: .15s;
+        transition-property: top, transform;
+    }
+    
+    .menu .line {
+        top: 50%;
+        transform: translateY(-50%);
+        transition-delay: .15s;
+    }
+    
+    .menu .line:after {
+       bottom: -20px;
+       transition-property: bottom, transform;
+    }
+    
+    .menu .line:after, .menu .line:before {
+        transition-duration: .3s, .3s;
+        transition-delay: .3s, 0s;
+    }
+    
+    .burger__active .line:before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    .burger__active .line::after {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    
+    .burger__active .line::after, .burger__active .line:before {
+        transition-delay: 0s, 0.3s;
+    }
+    
+    .burger__active .line {
+        background: none;
+    }
+      
+    .header.header__active  {
+        transform: translateY(0);
+    }
+    
+    .header__inner {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .intro__inner {
+        max-width: 90%;
+        padding: 200 10px;
+    }
+
+    .intro__frame {
+        padding-right: 50px;
+    }
+
+    .advantages__list{
+        max-width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .advantages__item{
+        margin-right: 25px 50px 25px 0;
+    }
+
+    .skills__inner {
+        padding: 0 40px;
+    }
+
+    .skills__h2 {
+        padding-top: 25px;
+    }   
+
+    .photo {
+        width: 50%;  
+        height: 50%; 
+    }
+
+    .video__inner {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .footer__inner {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header__inner {
+        max-width: 50%;
+    }
+
+    .intro__inner {
+        text-align: center;
+    }
+
+    .intro__frame {
+        display: none;
+    }
+
+    .about-me {
+        max-width: 90%;
+        margin: 100px auto;
+        text-align: center;
+    }
+
+    .advantages__list{
+        max-width: 90%;
+        flex-wrap: wrap;   
+    }
+
+    .advantages__item  {
+        margin: 0 auto;
+    }
+
+    .skills__inner{
+        flex-direction: column;
+    }
+
+    .skills__list {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    .project {
+        flex: 0 1 50%;
+    }
+
+   .project:nth-child(3),
+   .project:nth-child(4),
+   .project:nth-child(5),
+   .project:nth-child(6){
+       display: none;
+   }
+
+   .partners__list {
+        flex-direction: column;
+        width: 50%;  
+   }
+   
+   .partners__list li {
+       padding: 10px 0;
+   }
+
+   .form__inner {
+    max-width: 90%;
+   }
+
+   .form__list input{
+       flex: 0 0 100%;
+   }
+}
+
